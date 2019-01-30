@@ -1,0 +1,6 @@
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\bin\Release\projetoCalculadora.exe.config
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\bin\Release\projetoCalculadora.exe
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\bin\Release\projetoCalculadora.pdb
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\obj\Release\projetoCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\obj\Release\projetoCalculadora.exe
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\obj\Release\projetoCalculadora.pdb

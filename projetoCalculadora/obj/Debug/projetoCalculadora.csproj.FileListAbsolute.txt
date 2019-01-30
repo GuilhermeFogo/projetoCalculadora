@@ -1,0 +1,7 @@
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\bin\Debug\projetoCalculadora.exe.config
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\bin\Debug\projetoCalculadora.exe
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\bin\Debug\projetoCalculadora.pdb
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\obj\Debug\projetoCalculadora.csprojAssemblyReference.cache
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\obj\Debug\projetoCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\obj\Debug\projetoCalculadora.exe
+C:\Users\apcarli\source\repos\projetoCalculadora\projetoCalculadora\obj\Debug\projetoCalculadora.pdb
