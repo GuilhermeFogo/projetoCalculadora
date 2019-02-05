@@ -17,7 +17,7 @@ namespace projetoCalculadora.Modal
             int numero = 1;
             for (int i = 1; i <= numero1; i++)
             {
-                //numero = multiplicar.Mais(numero,i);
+                //numero = multiplicar.Execute(i,numero);
                 numero *= i;
             }
 

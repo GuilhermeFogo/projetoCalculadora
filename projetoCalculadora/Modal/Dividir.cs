@@ -19,18 +19,26 @@ namespace projetoCalculadora.Modal
 
         public override int Execute(int numero1, int numero2)
         {
-            int i;
-            for ( i = -1; numero2 >= 0; i++)
+            if (numero2 == 0 || numero1 ==0)
             {
-                numero2 = numero2 - numero1;
+                string mensagem_erro = "Erro fatal";
+               throw new ArgumentException(mensagem_erro);
+            } 
+            else
+            {
+                int i;
+                for (i = -1; numero2 >= 0; i++)
+                {
+                    numero2 = numero2 - numero1;
+                }
+
+                return i;
             }
-                                  
-            return i;
         }
 
 
 
-        public int DivideEspecial(int num1 ,int num2)
+        public int DivideEspecial(int num1 ,int num2) 
         {
             if (num2>=0)
             {

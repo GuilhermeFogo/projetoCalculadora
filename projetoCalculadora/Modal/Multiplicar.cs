@@ -28,24 +28,24 @@
 
         public int mutiplicaEspecial(int num1, int num2)
         {
-            if (num1 == 0)
-            {
-                return 0;
-            }
-            else
-            {
-                if (num2 == 0)
-                {
-                    return 0;
-                }
-                else
-                {
-                    if (num1 == num2)
-                    {
-                        return 1;
-                    }
-                }
-            }
+            //if (num1 == 0)
+            //{
+            //    return 0;
+            //}
+            //else
+            //{
+            //    if (num2 == 0)
+            //    {
+            //        return 0;
+            //    }
+            //    else
+            //    {
+            //        if (num1 == num2)
+            //        {
+            //            return 1;
+            //        }
+            //    }
+            //}
 
             if (cont < num2)
             {

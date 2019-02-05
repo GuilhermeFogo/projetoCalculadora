@@ -13,36 +13,30 @@ namespace projetoCalculadora.DTO
         public List<string> lista;
         public FileStream file;
         public StreamReader reader;
+        public FileInfo fileInfo;
 
         public List<string> LendoArqFormatado(string caminho)
         {
-            
-            try
+
+            this.fileInfo = new FileInfo(caminho);
+            this.file = new FileStream(caminho, FileMode.Open);
+            this.reader = new StreamReader(file);
+            this.lista = new List<string>();
+
+            if (fileInfo.Exists)
             {
-                FileInfo fileInfo = new FileInfo(caminho);
-                this.file = new FileStream(caminho, FileMode.Open);
-                this. reader = new StreamReader(file);
-                this.lista = new List<string>();
-
-                if (fileInfo.Exists)
+                while (!reader.EndOfStream)
                 {
-                    while (!reader.EndOfStream)
-                    {
-                        string movie = reader.ReadLine();
+                    string movie = reader.ReadLine();
 
-                        lista.Add(movie);
+                    lista.Add(movie);
 
-                    }
-                    reader.Close();
                 }
-                else
-                {
-                    Console.WriteLine("Arquivo não existe");
-                }
+                reader.Close();
             }
-            catch (FileNotFoundException e)
+            else
             {
-                Console.WriteLine(e);
+                throw new FileNotFoundException("Seu arquivo não existe");
             }
 
             return lista;
@@ -52,20 +46,29 @@ namespace projetoCalculadora.DTO
 
         public List<string> LerArquivoZip(string caminhoArq)
         {
+
+            this.fileInfo = new FileInfo(caminhoArq);
             this.lista = new List<string>();
 
             this.file = new FileStream(caminhoArq, FileMode.Open);
             this.reader = new StreamReader(file);
 
-            while (!reader.EndOfStream)
+            if (this.fileInfo.Exists)
             {
-                string movie = reader.ReadLine();
+                while (!reader.EndOfStream)
+                {
+                    string movie = reader.ReadLine();
 
 
-                this.lista = movie.Split(',').ToList();
+                    this.lista = movie.Split(',').ToList();
+                }
+                reader.Close();
             }
-            reader.Close();
-            
+            else
+            {
+                throw new FileNotFoundException();
+            }
+
             return lista;
         }
     }
