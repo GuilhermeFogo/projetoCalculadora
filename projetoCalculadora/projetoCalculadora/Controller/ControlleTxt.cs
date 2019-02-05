@@ -80,11 +80,11 @@ namespace projetoCalculadora.Domen
                 Console.WriteLine(e.Message);
                 //Console.WriteLine(e.StackTrace);
             }
-            //catch (NullReferenceException e)
-            //{
-            //    Console.WriteLine(e.Message);
-            //    Console.WriteLine(e.StackTrace);
-            //}
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+            }
         }
     }
 }
